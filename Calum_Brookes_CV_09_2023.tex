@@ -1,0 +1,216 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Calum}{Brookes}{ \urlstyle{same}\url{http://linkedin.com/in/calumbrookes} \\
+\href{mailto:calum.brookes@bbc.co.uk}{calum.brookes@bbc.co.uk} | 07930435754
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Salford}
+\descript{BEng Broadcast Engineering}
+\location{First Class Honours}
+\sectionsep
+\subsection{Birm. City University}
+\descript{MEng Broadcast Engineering}
+\location{Distinction}
+\sectionsep
+\subsection{Assocation of Proj Mgmt}
+\descript{Project Management Cert}
+\location{APM-PMQ}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Languages:}
+Java \textbullet{} Bash \textbullet{} Python \textbullet{} LaTeX\ \\ 
+Matlab \textbullet{} C \textbullet{} C++ \textbullet{} SQL \\
+\sectionsep
+
+\subsection{Leadership}
+\location{Interests \& Skills:}
+Service Management \\
+Workflow Improvement \\
+Incident Management \\
+Continuous Improvement \\
+Effecting Culture Change \\
+Mentoring/Coaching \\
+Agile Methodology \\
+Empowering \& Building Teams \\
+\sectionsep
+
+\subsection{Engineering}
+\location{Interests \& Skills:}
+Project Engineering \\
+Requirements Assessment \\ 
+Technical Documentation \\
+IP Infrastructure \\
+Broadcast Hardware \\
+TV \& Radio Distribution \\
+Broadcast Automation \\
+Systems Integration \\
+Control Systems Dev \\
+Virtualisation Technologies \\
+Monitoring Tools (Icinga/Nagios)\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Employment \& Voluntary Work}
+
+\runsubsection{BBC}
+\descript{| Project Manager / Senior Systems Engineer (2 Years)}
+\location{Nov 2021 – Present | Glasgow, Scotland}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Revitalisation of the News TV studio operations in BBC Scot, working into a programme of works spanning two years and £500k+ of investment.
+\item Interview Champion - helping to change the BBC's interview culture and promote fair, inclusive hiring processes across the organisation.
+\item Accountable for delivery of project tasks for myself and for the work of engineers reporting in to me during the project period.
+\item Mentoring and supporting colleagues, leading ad-hoc teams where appropriate, and acting as a source of best practice within BBC Scotland.
+\item Delivering strategic workflow \& cultural change, to improve cost-effectiveness and capability across TV, Radio \& Online production, as part of the Value For All and Digital First strategies.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BBC}
+\descript{| Operations Engineer (3 Years)}
+\location{Jun 2018 – Nov 2021 | Glasgow, Scotland}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Based in BBC Scot with Engineering Operations, supporting ops \& incident mgmt across TV, Radio and building \& facility infrastructure at sites across Scot.
+\item Project work - worked to build new edit faciltiies at Dumbarton studios, VO booths in TV Presentation and upgrading DAW spaces in Pacific Quay.
+\item Taken primary system ownership for supporting and developing a number of systems in BBC Scotland including the internal Raven ingest/playout system.
+\item Worked with key industry suppliers and partners such as Grass Valley, Viz and VCS to find resolutions to incidents which require supplier intervention. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BBC}
+\descript{| Project Manager (1 Year)}
+\location{Jan 2020 – Jan 2021 | Glasgow, Scotland}
+\begin{tightemize}
+\item Managed the upgrade of the VCS radio prod \& playout system within Scotland, a multi-site, pan-BBC service upgrade - liasing between local prod teams, suppliers, and local \& national engineering support.
+\item Other projects include managing the design, tender \& procurement of the £180k studio infrastructure upgrade across the 3 major Scottish TV studios.
+\item Led a programme to change our documentation from the ground up - infosec approval of a new Password Manager, migrating to the BBC's "Confluence" managed service, \& developing our doc processes to match our support model.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BBC}
+\descript{| Trainee Broadcast Engineer (MEng) (2 Years)}
+\location{Jul 2016 – May 2018 | Glasgow, Scotland}
+\sectionsep
+
+\runsubsection{BBC}
+\descript{| Apprentice Broadcast Engineer (BEng) (3 Years)}
+\location{Sep 2013 – Jul 2016 | Birmingham, England \& Glasgow, Scotland}
+\begin{tightemize}
+\item Worked for BBC English Regions \& BBC Scotland, including attachments to external organisations including Arqiva and STV.
+%\item Worked as a 3rd line engineer for English Regions' testing and development team, including with the project team releasing ViLoR to English Regions
+%\item Secondment to Arqiva \& changed the Radio 4 Long Wave antenna at Droitwich.
+\item Worked across two UK General Elections, a Scottish GE and two referendums, as well as the Commonwealth Games in Glasgow.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{National Student Television Association (2 Years)}
+\descript{| Executive Technical Officer \& Electoral Returning Officer }
+\location{Jul 2012 – Jul 2015 | UK Nationwide}
+\begin{tightemize}
+\item Elected \& re-elected for two terms of office.
+\item Honoured at the end with a term as the association's Returning Officer.
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}
